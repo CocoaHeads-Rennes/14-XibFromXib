@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="myFutureStepper" destination="5W2-Cs-AuT" id="67n-fJ-9uQ"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5W2-Cs-AuT">
+                    <rect key="frame" x="200" y="62" width="100" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="JDb-LO-4JG"/>
+                        <constraint firstAttribute="height" constant="40" id="aRw-fL-VDD"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stepper :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxh-ju-cpi">
+                    <rect key="frame" x="119" y="62" width="71" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOn-58-kNB" customClass="Stepper">
+                    <rect key="frame" x="200" y="508" width="100" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="9X7-5r-Lwt"/>
+                        <constraint firstAttribute="height" constant="40" id="kvR-bE-aap"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stepper :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAw-mo-VXI">
+                    <rect key="frame" x="119" y="508" width="71" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.90168606505102045" green="0.90168606505102045" blue="0.90168606505102045" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5W2-Cs-AuT" secondAttribute="trailing" constant="20" id="2sF-sF-IEM"/>
+                <constraint firstItem="5W2-Cs-AuT" firstAttribute="top" secondItem="Jxh-ju-cpi" secondAttribute="top" id="9Q9-of-NJX"/>
+                <constraint firstItem="5W2-Cs-AuT" firstAttribute="bottom" secondItem="Jxh-ju-cpi" secondAttribute="bottom" id="F4x-Rk-oMY"/>
+                <constraint firstItem="5W2-Cs-AuT" firstAttribute="leading" secondItem="Jxh-ju-cpi" secondAttribute="trailing" constant="10" id="GKt-7H-Q67"/>
+                <constraint firstItem="lOn-58-kNB" firstAttribute="bottom" secondItem="dAw-mo-VXI" secondAttribute="bottom" id="LMN-Cx-M8O"/>
+                <constraint firstAttribute="bottom" secondItem="lOn-58-kNB" secondAttribute="bottom" constant="20" id="LtI-uO-bOM"/>
+                <constraint firstItem="5W2-Cs-AuT" firstAttribute="top" secondItem="1" secondAttribute="top" constant="62" id="Ntz-of-J96"/>
+                <constraint firstAttribute="trailing" secondItem="lOn-58-kNB" secondAttribute="trailing" constant="20" id="SEm-jx-g0M"/>
+                <constraint firstItem="lOn-58-kNB" firstAttribute="leading" secondItem="dAw-mo-VXI" secondAttribute="trailing" constant="10" id="UA7-Oh-VJ6"/>
+                <constraint firstItem="lOn-58-kNB" firstAttribute="top" secondItem="dAw-mo-VXI" secondAttribute="top" id="kad-HM-A4V"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
